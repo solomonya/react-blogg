@@ -23,7 +23,7 @@ const Tabs: FC<Props> = ({ tabsHeaders, tabsOutlets, type }) => {
   return (
     <div>
       <nav>
-        <ul className='flex items-center'>
+        <ul className='flex items-center justify-center'>
           {tabsHeaders.map((tabHeader) => {
             return (
               <li key={tabHeader.id}>

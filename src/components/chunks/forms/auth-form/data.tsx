@@ -1,10 +1,18 @@
+import BaseForm from './base-form/BaseForm';
+
 export const data = {
   tabsHeaders: [
     { id: 'Login', title: 'Log In' },
     { id: 'create-account', title: 'Create account' },
   ],
   tabsOutlets: [
-    { id: 'Login', element: <h1>login</h1> },
-    { id: 'create-account', element: <h1>create account</h1> },
+    {
+      id: 'Login',
+      element: <BaseForm btnText='Log In' onSubmit={console.log} />,
+    },
+    {
+      id: 'create-account',
+      element: <BaseForm btnText='Sign Up' onSubmit={console.log} />,
+    },
   ],
 };
